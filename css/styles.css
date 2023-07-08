@@ -1,0 +1,69 @@
+* {
+    font-family: 'Schoolbell', cursive;
+}
+
+.br {
+    flex-basis: 100%;
+    height: 0;
+}
+
+hr {
+    width: 90%;
+    margin: auto auto 5% auto;
+}
+
+#idiot {
+    margin: auto auto 0% auto;
+}
+
+/*body {
+    background-image: url('/img/tanglewood.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
+
+#book-cover {
+    margin: 5% 15%;
+    display: flex;
+    justify-content: center;
+}
+
+#page-one, #page-two {
+    width: 50%;
+    border: 1px solid black;
+}
+
+h1 {
+    text-align: left;
+    margin-left: 5%;
+}
+
+#p1 {
+    margin-left: 5%;
+}
+
+#p2 {
+    text-align: center;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+#column1, #column2, #ghost-column1, #ghost-column2, #ghost-column3, #evidence-column1, #evidence-column2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#evidence {
+    display: flex;
+    justify-content: space-around;
+}
+
+#ghosts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
