@@ -1,9 +1,11 @@
+//Declaring components within modal
 let ghostName = document.getElementById('modal-title');
 let description = document.getElementById('description');
 let strength = document.getElementById('strength');
 let weakness = document.getElementById('weakness');
 let ghostEvidence = document.getElementById('ghost-evidence');
 
+//Declaring ghost info buttons
 let spiritInfo = document.getElementById('spirit-info');
 spiritInfo.addEventListener('click', showSpiritInfo);
 let wraithInfo = document.getElementById('wraith-info');
@@ -53,6 +55,7 @@ deogenInfo.addEventListener('click', showDeogenInfo);
 let thayeInfo = document.getElementById('thaye-info');
 thayeInfo.addEventListener('click', showThayeInfo);
 
+//Functions that populate content into ghost info modal on button click
 function showSpiritInfo () {
     ghostName.innerText = 'Spirit';
     description.innerHTML = 'Spirits are very common ghosts. they are<br>very powerful, but passive, only attacking<br>when they need to. They defend their<br>place of death to the utmost degree,<br>killing anyone that is caught overstaying<br>their welcome.';
