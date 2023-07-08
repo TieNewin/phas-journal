@@ -16,6 +16,12 @@ hr {
     margin: auto auto 0% auto;
 }
 
+.modal-content {
+    background-image: url('/img/modalpage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #book-cover {
     margin: 1% 15%;
     padding-bottom: 100px;
