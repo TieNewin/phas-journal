@@ -57,10 +57,15 @@ h1 {
     margin-left: 5%;
 }
 
-#column1, #column2, #ghost-column1, #ghost-column2, #ghost-column3, #evidence-column1, #evidence-column2 {
+#column1, #column2, #ghost-column1, #ghost-column2, #ghost-column3, #evidence-column1 {
     display: flex;
     flex-direction: column;
     gap: 15%;
+}
+
+#evidence-column2 {
+    display: flex;
+    flex-direction: column;
 }
 
 #evidence {
