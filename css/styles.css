@@ -16,21 +16,25 @@ hr {
     margin: auto auto 0% auto;
 }
 
-/*body {
-    background-image: url('/img/tanglewood.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-}*/
-
 #book-cover {
-    margin: 5% 15%;
+    margin: 1% 15%;
+    padding-bottom: 100px;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
+    background-image: url('/img/journal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #page-one, #page-two {
-    width: 50%;
-    border: 1px solid black;
+    width: 40%;
+    padding-top: 1%;
+    margin: 5% 0 5% 0;
+}
+
+#page-two {
+    margin: 5% 0 5% 0;
 }
 
 h1 {
@@ -48,13 +52,15 @@ h1 {
 
 #buttons {
     display: flex;
-    justify-content: space-around;
+    justify-content: left;
+    gap: 15%;
+    margin-left: 5%;
 }
 
 #column1, #column2, #ghost-column1, #ghost-column2, #ghost-column3, #evidence-column1, #evidence-column2 {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 15%;
 }
 
 #evidence {
@@ -66,4 +72,8 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.select {
+    border: none;
 }
