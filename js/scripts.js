@@ -247,3 +247,160 @@ function showThayeInfo () {
     weakness.innerHTML = 'Weakness: Thaye will weaken over time,<br>making them weaker, slower and less<br>aggressive.';
     ghostEvidence.innerHTML = '<h5>Evidence</h5>Ghost Orb<br>Ghost Writing<br>D.O.T.S Projector';
 }
+
+//Declare evidence buttons and state toggle event listeners
+let emf = document.getElementById('emf');
+emf.addEventListener('click', emfToggle);
+let fingerprints = document.getElementById('fingerprints');
+fingerprints.addEventListener('click', fingerprintsToggle);
+let writing = document.getElementById('writing');
+writing.addEventListener('click', writingToggle);
+let freezing = document.getElementById('freezing');
+freezing.addEventListener('click', freezingToggle);
+let dots = document.getElementById('dots');
+dots.addEventListener('click', dotsToggle);
+let orbs = document.getElementById('orbs');
+orbs.addEventListener('click', orbsToggle);
+let spiritBox = document.getElementById('spirit-box');
+spiritBox.addEventListener('click', spiritBoxToggle);
+
+//Declare ghost answer buttons
+let spirit = document.getElementById('spirit');
+spirit.addEventListener('click', spiritToggle);
+let wraith = document.getElementById('wraith');
+let phantom = document.getElementById('phantom');
+let poltergeist = document.getElementById('poltergeist');
+let banshee = document.getElementById('banshee');
+let jinn = document.getElementById('jinn');
+let mare = document.getElementById('mare');
+let revenant = document.getElementById('revenant');
+let shade = document.getElementById('shade');
+let demon = document.getElementById('demon');
+let yurei = document.getElementById('yurei');
+let oni = document.getElementById('oni');
+let yokai = document.getElementById('yokai');
+let hantu = document.getElementById('hantu');
+let goryo = document.getElementById('goryo');
+let myling = document.getElementById('myling');
+let onryo = document.getElementById('onryo');
+let twins = document.getElementById('twins');
+let raiju = document.getElementById('raiju');
+let obake = document.getElementById('obake');
+let mimic = document.getElementById('mimic');
+let moroi = document.getElementById('moroi');
+let deogen = document.getElementById('deogen');
+let thaye = document.getElementById('thaye');
+
+//Functions for changing evidence button appearance on click
+function emfToggle () {
+    if (emf.innerHTML === '<img id="emf-sym" src="img/square.svg"> EMF Level 5') {
+        emf.innerHTML = '<img id="emf-sym" src="img/x-square.svg"> EMF Level 5';
+    } else {
+        if (emf.innerHTML === '<img id="emf-sym" src="img/x-square.svg"> EMF Level 5') {
+            emf.innerHTML = '<img id="emf-sym" src="img/square.svg"> <del>EMF Level 5</del>';
+        } else {
+            if(emf.innerHTML === '<img id="emf-sym" src="img/square.svg"> <del>EMF Level 5</del>') {
+                emf.innerHTML = '<img id="emf-sym" src="img/square.svg"> EMF Level 5';
+            } 
+        }
+    } 
+}
+
+function fingerprintsToggle () {
+    if (fingerprints.innerHTML === '<img id="fingerprints-sym" src="img/square.svg"> Fingerprints') {
+        fingerprints.innerHTML = '<img id="fingerprints-sym" src="img/x-square.svg"> Fingerprints';
+    } else {
+        if (fingerprints.innerHTML === '<img id="fingerprints-sym" src="img/x-square.svg"> Fingerprints') {
+            fingerprints.innerHTML = '<img id="fingerprints-sym" src="img/square.svg"> <del>Fingerprints</del>';
+        } else {
+            if(fingerprints.innerHTML === '<img id="fingerprints-sym" src="img/square.svg"> <del>Fingerprints</del>') {
+                fingerprints.innerHTML = '<img id="fingerprints-sym" src="img/square.svg"> Fingerprints';
+            } 
+        }
+    } 
+}
+
+function writingToggle () {
+    if (writing.innerHTML === '<img id="writing-sym" src="img/square.svg"> Ghost Writing') {
+        writing.innerHTML = '<img id="writing-sym" src="img/x-square.svg"> Ghost Writing';
+    } else {
+        if (writing.innerHTML === '<img id="writing-sym" src="img/x-square.svg"> Ghost Writing') {
+            writing.innerHTML = '<img id="writing-sym" src="img/square.svg"> <del>Ghost Writing</del>';
+        } else {
+            if(writing.innerHTML === '<img id="writing-sym" src="img/square.svg"> <del>Ghost Writing</del>') {
+                writing.innerHTML = '<img id="writing-sym" src="img/square.svg"> Ghost Writing';
+            } 
+        }
+    } 
+}
+
+function freezingToggle () {
+    if (freezing.innerHTML === '<img id="freezing-sym" src="img/square.svg"> Freezing Temperatures') {
+        freezing.innerHTML = '<img id="freezing-sym" src="img/x-square.svg"> Freezing Temperatures';
+    } else {
+        if (freezing.innerHTML === '<img id="freezing-sym" src="img/x-square.svg"> Freezing Temperatures') {
+            freezing.innerHTML = '<img id="freezing-sym" src="img/square.svg"> <del>Freezing Temperatures</del>';
+        } else {
+            if(freezing.innerHTML === '<img id="freezing-sym" src="img/square.svg"> <del>Freezing Temperatures</del>') {
+                freezing.innerHTML = '<img id="freezing-sym" src="img/square.svg"> Freezing Temperatures';
+            } 
+        }
+    } 
+}
+
+function dotsToggle () {
+    if (dots.innerHTML === '<img id="dots-sym" src="img/square.svg"> D.O.T.S Projector') {
+        dots.innerHTML = '<img id="dots-sym" src="img/x-square.svg"> D.O.T.S Projector';
+    } else {
+        if (dots.innerHTML === '<img id="dots-sym" src="img/x-square.svg"> D.O.T.S Projector') {
+            dots.innerHTML = '<img id="dots-sym" src="img/square.svg"> <del>D.O.T.S Projector</del>';
+        } else {
+            if(dots.innerHTML === '<img id="dots-sym" src="img/square.svg"> <del>D.O.T.S Projector</del>') {
+                dots.innerHTML = '<img id="dots-sym" src="img/square.svg"> D.O.T.S Projector';
+            } 
+        }
+    } 
+}
+
+function orbsToggle () {
+    if (orbs.innerHTML === '<img id="orbs-sym" src="img/square.svg"> Ghost Orb') {
+        orbs.innerHTML = '<img id="orbs-sym" src="img/x-square.svg"> Ghost Orb';
+    } else {
+        if (orbs.innerHTML === '<img id="orbs-sym" src="img/x-square.svg"> Ghost Orb') {
+            orbs.innerHTML = '<img id="orbs-sym" src="img/square.svg"> <del>Ghost Orb</del>';
+        } else {
+            if(orbs.innerHTML === '<img id="orbs-sym" src="img/square.svg"> <del>Ghost Orb</del>') {
+                orbs.innerHTML = '<img id="orbs-sym" src="img/square.svg"> Ghost Orb';
+            } 
+        }
+    } 
+}
+
+function spiritBoxToggle () {
+    if (spiritBox.innerHTML === '<img id="spirit-box-sym" src="img/square.svg"> Spirit Box') {
+        spiritBox.innerHTML = '<img id="spirit-box-sym" src="img/x-square.svg"> Spirit Box';
+    } else {
+        if (spiritBox.innerHTML === '<img id="spirit-box-sym" src="img/x-square.svg"> Spirit Box') {
+            spiritBox.innerHTML = '<img id="spirit-box-sym" src="img/square.svg"> <del>Spirit Box</del>';
+        } else {
+            if(spiritBox.innerHTML === '<img id="spirit-box-sym" src="img/square.svg"> <del>Spirit Box</del>') {
+                spiritBox.innerHTML = '<img id="spirit-box-sym" src="img/square.svg"> Spirit Box';
+            } 
+        }
+    } 
+}
+
+//Functions for changing ghost answer button appearance on click
+function spiritToggle () {
+    if (emf.innerHTML === '<img id="emf-sym" src="img/square.svg"> EMF Level 5') {
+        emf.innerHTML = '<img id="emf-sym" src="img/x-square.svg"> EMF Level 5';
+    } else {
+        if (emf.innerHTML === '<img id="emf-sym" src="img/x-square.svg"> EMF Level 5') {
+            emf.innerHTML = '<img id="emf-sym" src="img/square.svg"> <del>EMF Level 5</del>';
+        } else {
+            if(emf.innerHTML === '<img id="emf-sym" src="img/square.svg"> <del>EMF Level 5</del>') {
+                emf.innerHTML = '<img id="emf-sym" src="img/square.svg"> EMF Level 5';
+            } 
+        }
+    } 
+}

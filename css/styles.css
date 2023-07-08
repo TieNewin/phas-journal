@@ -79,6 +79,11 @@ h1 {
     justify-content: space-around;
 }
 
+#emf, #fingerprints, #writing, #freezing, #dots, #orbs, #spirit-box, #spirit, #poltergeist, #mare, #demon, #yokai, #myling, #raiju, #moroi, #wraith, #banshee, #revenant, #yurei, #hantu, #onryo, #obake, #deogen, #phantom, #jinn, #shade, #oni, #goryo, #twins, #mimic, #thaye {
+    background-color: transparent;
+    color: black;
+}
+
 #ghosts {
     display: flex;
     flex-wrap: wrap;
