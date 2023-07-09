@@ -266,7 +266,7 @@ spiritBox.addEventListener('click', spiritBoxToggle);
 
 //Declare ghost answer buttons
 let spirit = document.getElementById('spirit');
-spirit.addEventListener('click', spiritToggle);
+spirit.addEventListener('click', answerToggle);
 let wraith = document.getElementById('wraith');
 let phantom = document.getElementById('phantom');
 let poltergeist = document.getElementById('poltergeist');
@@ -391,16 +391,6 @@ function spiritBoxToggle () {
 }
 
 //Functions for changing ghost answer button appearance on click
-function spiritToggle () {
-    if (emf.innerHTML === '<img id="emf-sym" src="img/square.svg"> EMF Level 5') {
-        emf.innerHTML = '<img id="emf-sym" src="img/x-square.svg"> EMF Level 5';
-    } else {
-        if (emf.innerHTML === '<img id="emf-sym" src="img/x-square.svg"> EMF Level 5') {
-            emf.innerHTML = '<img id="emf-sym" src="img/square.svg"> <del>EMF Level 5</del>';
-        } else {
-            if(emf.innerHTML === '<img id="emf-sym" src="img/square.svg"> <del>EMF Level 5</del>') {
-                emf.innerHTML = '<img id="emf-sym" src="img/square.svg"> EMF Level 5';
-            } 
-        }
-    } 
+function answerToggle () {
+    
 }
