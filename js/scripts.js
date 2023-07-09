@@ -266,30 +266,53 @@ spiritBox.addEventListener('click', spiritBoxToggle);
 
 //Declare ghost answer buttons
 let spirit = document.getElementById('spirit');
-spirit.addEventListener('click', answerToggle);
+spirit.addEventListener('click', spiritToggle);
 let wraith = document.getElementById('wraith');
+wraith.addEventListener('click', wraithToggle);
 let phantom = document.getElementById('phantom');
+phantom.addEventListener('click', phantomToggle);
 let poltergeist = document.getElementById('poltergeist');
+poltergeist.addEventListener('click', poltergeistToggle);
 let banshee = document.getElementById('banshee');
+banshee.addEventListener('click', bansheeToggle);
 let jinn = document.getElementById('jinn');
+jinn.addEventListener('click', jinnToggle);
 let mare = document.getElementById('mare');
+mare.addEventListener('click', mareToggle);
 let revenant = document.getElementById('revenant');
+revenant.addEventListener('click', revenantToggle);
 let shade = document.getElementById('shade');
+shade.addEventListener('click', shadeToggle);
 let demon = document.getElementById('demon');
+demon.addEventListener('click', demonToggle);
 let yurei = document.getElementById('yurei');
+yurei.addEventListener('click', yureiToggle);
 let oni = document.getElementById('oni');
+oni.addEventListener('click', oniToggle);
 let yokai = document.getElementById('yokai');
+yokai.addEventListener('click', yokaiToggle);
 let hantu = document.getElementById('hantu');
+hantu.addEventListener('click', hantuToggle);
 let goryo = document.getElementById('goryo');
+goryo.addEventListener('click', goryoToggle);
 let myling = document.getElementById('myling');
+myling.addEventListener('click', mylingToggle);
 let onryo = document.getElementById('onryo');
+onryo.addEventListener('click', onryoToggle);
 let twins = document.getElementById('twins');
+twins.addEventListener('click', twinsToggle);
 let raiju = document.getElementById('raiju');
+raiju.addEventListener('click', raijuToggle);
 let obake = document.getElementById('obake');
+obake.addEventListener('click', obakeToggle);
 let mimic = document.getElementById('mimic');
+mimic.addEventListener('click', mimicToggle);
 let moroi = document.getElementById('moroi');
+moroi.addEventListener('click', moroiToggle);
 let deogen = document.getElementById('deogen');
+deogen.addEventListener('click', deogenToggle);
 let thaye = document.getElementById('thaye');
+thaye.addEventListener('click', thayeToggle);
 
 //Functions for changing evidence button appearance on click
 function emfToggle () {
@@ -390,7 +413,243 @@ function spiritBoxToggle () {
     } 
 }
 
-//Functions for changing ghost answer button appearance on click
-function answerToggle () {
-    
+//Function for changing ghost answer buttons appearance on click
+function spiritToggle () {
+    if (spirit.innerHTML === 'Spirit') {
+        spirit.innerHTML = '<del>Spirit</del>';
+    } else {
+        if (spirit.innerHTML === '<del>Spirit</del>') {
+            spirit.innerHTML = 'Spirit';
+        }
+    }
+}
+
+function wraithToggle () {
+    if (wraith.innerHTML === 'Wraith') {
+        wraith.innerHTML = '<del>Wraith</del>';
+    } else {
+        if (wraith.innerHTML === '<del>Wraith</del>') {
+            wraith.innerHTML = 'Wraith';
+        }
+    }
+}
+
+function phantomToggle () {
+    if (phantom.innerHTML === 'Phantom') {
+        phantom.innerHTML = '<del>Phantom</del>';
+    } else {
+        if (phantom.innerHTML === '<del>Phantom</del>') {
+            phantom.innerHTML = 'Phantom';
+        }
+    }
+}
+
+function poltergeistToggle () {
+    if (poltergeist.innerHTML === 'Poltergeist') {
+        poltergeist.innerHTML = '<del>Poltergeist</del>';
+    } else {
+        if (poltergeist.innerHTML === '<del>Poltergeist</del>') {
+            poltergeist.innerHTML = 'Poltergeist';
+        }
+    }
+}
+
+function bansheeToggle () {
+    if (banshee.innerHTML === 'Banshee') {
+        banshee.innerHTML = '<del>Banshee</del>';
+    } else {
+        if (banshee.innerHTML === '<del>Banshee</del>') {
+            banshee.innerHTML = 'Banshee';
+        }
+    }
+}
+
+function jinnToggle () {
+    if (jinn.innerHTML === 'Jinn') {
+        jinn.innerHTML = '<del>Jinn</del>';
+    } else {
+        if (jinn.innerHTML === '<del>Jinn</del>') {
+            jinn.innerHTML = 'Jinn';
+        }
+    }
+}
+
+function mareToggle () {
+    if (mare.innerHTML === 'Mare') {
+        mare.innerHTML = '<del>Mare</del>';
+    } else {
+        if (mare.innerHTML === '<del>Mare</del>') {
+            mare.innerHTML = 'Mare';
+        }
+    }
+}
+
+function revenantToggle () {
+    if (revenant.innerHTML === 'Revenant') {
+        revenant.innerHTML = '<del>Revenant</del>';
+    } else {
+        if (revenant.innerHTML === '<del>Revenant</del>') {
+            revenant.innerHTML = 'Revenant';
+        }
+    }
+}
+
+function shadeToggle () {
+    if (shade.innerHTML === 'Shade') {
+        shade.innerHTML = '<del>Shade</del>';
+    } else {
+        if (shade.innerHTML === '<del>Shade</del>') {
+            shade.innerHTML = 'Shade';
+        }
+    }
+}
+
+function demonToggle () {
+    if (demon.innerHTML === 'Demon') {
+        demon.innerHTML = '<del>Demon</del>';
+    } else {
+        if (demon.innerHTML === '<del>Demon</del>') {
+            demon.innerHTML = 'Demon';
+        }
+    }
+}
+
+function yureiToggle () {
+    if (yurei.innerHTML === 'Yurei') {
+        yurei.innerHTML = '<del>Yurei</del>';
+    } else {
+        if (yurei.innerHTML === '<del>Yurei</del>') {
+            yurei.innerHTML = 'Yurei';
+        }
+    }
+}
+
+function oniToggle () {
+    if (oni.innerHTML === 'Oni') {
+        oni.innerHTML = '<del>Oni</del>';
+    } else {
+        if (oni.innerHTML === '<del>Oni</del>') {
+            oni.innerHTML = 'Oni';
+        }
+    }
+}
+
+function yokaiToggle () {
+    if (yokai.innerHTML === 'Yokai') {
+        yokai.innerHTML = '<del>Yokai</del>';
+    } else {
+        if (yokai.innerHTML === '<del>Yokai</del>') {
+            yokai.innerHTML = 'Yokai';
+        }
+    }
+}
+
+function hantuToggle () {
+    if (hantu.innerHTML === 'Hantu') {
+        hantu.innerHTML = '<del>Hantu</del>';
+    } else {
+        if (hantu.innerHTML === '<del>Hantu</del>') {
+            hantu.innerHTML = 'Hantu';
+        }
+    }
+}
+
+function goryoToggle () {
+    if (goryo.innerHTML === 'Goryo') {
+        goryo.innerHTML = '<del>Goryo</del>';
+    } else {
+        if (goryo.innerHTML === '<del>Goryo</del>') {
+            goryo.innerHTML = 'Goryo';
+        }
+    }
+}
+
+function mylingToggle () {
+    if (myling.innerHTML === 'Myling') {
+        myling.innerHTML = '<del>Myling</del>';
+    } else {
+        if (myling.innerHTML === '<del>Myling</del>') {
+            myling.innerHTML = 'Myling';
+        }
+    }
+}
+
+function onryoToggle () {
+    if (onryo.innerHTML === 'Onryo') {
+        onryo.innerHTML = '<del>Onryo</del>';
+    } else {
+        if (onryo.innerHTML === '<del>Onryo</del>') {
+            onryo.innerHTML = 'Onryo';
+        }
+    }
+}
+
+function twinsToggle () {
+    if (twins.innerHTML === 'The Twins') {
+        twins.innerHTML = '<del>The Twins</del>';
+    } else {
+        if (twins.innerHTML === '<del>The Twins</del>') {
+            twins.innerHTML = 'The Twins';
+        }
+    }
+}
+
+function raijuToggle () {
+    if (raiju.innerHTML === 'Raiju') {
+        raiju.innerHTML = '<del>Raiju</del>';
+    } else {
+        if (raiju.innerHTML === '<del>Raiju</del>') {
+            raiju.innerHTML = 'Raiju';
+        }
+    }
+}
+
+function obakeToggle () {
+    if (obake.innerHTML === 'Obake') {
+        obake.innerHTML = '<del>Obake</del>';
+    } else {
+        if (obake.innerHTML === '<del>Obake</del>') {
+            obake.innerHTML = 'Obake';
+        }
+    }
+}
+
+function mimicToggle () {
+    if (mimic.innerHTML === 'The Mimic') {
+        mimic.innerHTML = '<del>The Mimic</del>';
+    } else {
+        if (mimic.innerHTML === '<del>The Mimic</del>') {
+            mimic.innerHTML = 'The Mimic';
+        }
+    }
+}
+
+function moroiToggle () {
+    if (moroi.innerHTML === 'Moroi') {
+        moroi.innerHTML = '<del>Moroi</del>';
+    } else {
+        if (moroi.innerHTML === '<del>Moroi</del>') {
+            moroi.innerHTML = 'Moroi';
+        }
+    }
+}
+
+function deogenToggle () {
+    if (deogen.innerHTML === 'Deogen') {
+        deogen.innerHTML = '<del>Deogen</del>';
+    } else {
+        if (deogen.innerHTML === '<del>Deogen</del>') {
+            deogen.innerHTML = 'Deogen';
+        }
+    }
+}
+
+function thayeToggle () {
+    if (thaye.innerHTML === 'Thaye') {
+        thaye.innerHTML = '<del>Thaye</del>';
+    } else {
+        if (thaye.innerHTML === '<del>Thaye</del>') {
+            thaye.innerHTML = 'Thaye';
+        }
+    }
 }
