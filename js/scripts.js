@@ -318,99 +318,148 @@ thaye.addEventListener('click', thayeToggle);
 function emfToggle () {
     if (emf.innerHTML === '<img id="emf-sym" src="img/square.svg"> EMF Level 5') {
         emf.innerHTML = '<img id="emf-sym" src="img/x-square.svg"> EMF Level 5';
+        emf.classList.remove('blank');
+        emf.classList.add('check');
     } else {
         if (emf.innerHTML === '<img id="emf-sym" src="img/x-square.svg"> EMF Level 5') {
             emf.innerHTML = '<img id="emf-sym" src="img/square.svg"> <del>EMF Level 5</del>';
+            emf.classList.remove('check');
+            emf.classList.add('cross');
         } else {
             if(emf.innerHTML === '<img id="emf-sym" src="img/square.svg"> <del>EMF Level 5</del>') {
                 emf.innerHTML = '<img id="emf-sym" src="img/square.svg"> EMF Level 5';
+                emf.classList.remove('cross');
+                emf.classList.add('blank');
             } 
         }
-    } 
+    }
+    answerToggle(); 
 }
 
 function fingerprintsToggle () {
     if (fingerprints.innerHTML === '<img id="fingerprints-sym" src="img/square.svg"> Fingerprints') {
         fingerprints.innerHTML = '<img id="fingerprints-sym" src="img/x-square.svg"> Fingerprints';
+        fingerprints.classList.remove('blank');
+        fingerprints.classList.add('check');
     } else {
         if (fingerprints.innerHTML === '<img id="fingerprints-sym" src="img/x-square.svg"> Fingerprints') {
             fingerprints.innerHTML = '<img id="fingerprints-sym" src="img/square.svg"> <del>Fingerprints</del>';
+            fingerprints.classList.remove('check');
+            fingerprints.classList.add('cross');
         } else {
             if(fingerprints.innerHTML === '<img id="fingerprints-sym" src="img/square.svg"> <del>Fingerprints</del>') {
                 fingerprints.innerHTML = '<img id="fingerprints-sym" src="img/square.svg"> Fingerprints';
+                fingerprints.classList.remove('cross');
+                fingerprints.classList.add('blank');
             } 
         }
-    } 
+    }
+    answerToggle();  
 }
 
 function writingToggle () {
     if (writing.innerHTML === '<img id="writing-sym" src="img/square.svg"> Ghost Writing') {
         writing.innerHTML = '<img id="writing-sym" src="img/x-square.svg"> Ghost Writing';
+        writing.classList.remove('blank');
+        writing.classList.add('check');
     } else {
         if (writing.innerHTML === '<img id="writing-sym" src="img/x-square.svg"> Ghost Writing') {
             writing.innerHTML = '<img id="writing-sym" src="img/square.svg"> <del>Ghost Writing</del>';
+            writing.classList.remove('check');
+            writing.classList.add('cross');
         } else {
             if(writing.innerHTML === '<img id="writing-sym" src="img/square.svg"> <del>Ghost Writing</del>') {
                 writing.innerHTML = '<img id="writing-sym" src="img/square.svg"> Ghost Writing';
+                writing.classList.remove('cross');
+                writing.classList.add('blank');
             } 
         }
-    } 
+    }
+    answerToggle();  
 }
 
 function freezingToggle () {
     if (freezing.innerHTML === '<img id="freezing-sym" src="img/square.svg"> Freezing Temperatures') {
         freezing.innerHTML = '<img id="freezing-sym" src="img/x-square.svg"> Freezing Temperatures';
+        freezing.classList.remove('blank');
+        freezing.classList.add('check');
     } else {
         if (freezing.innerHTML === '<img id="freezing-sym" src="img/x-square.svg"> Freezing Temperatures') {
             freezing.innerHTML = '<img id="freezing-sym" src="img/square.svg"> <del>Freezing Temperatures</del>';
+            freezing.classList.remove('check');
+            freezing.classList.add('cross');
         } else {
             if(freezing.innerHTML === '<img id="freezing-sym" src="img/square.svg"> <del>Freezing Temperatures</del>') {
                 freezing.innerHTML = '<img id="freezing-sym" src="img/square.svg"> Freezing Temperatures';
+                freezing.classList.remove('cross');
+                freezing.classList.add('blank');
             } 
         }
-    } 
+    }
+    answerToggle();  
 }
 
 function dotsToggle () {
     if (dots.innerHTML === '<img id="dots-sym" src="img/square.svg"> D.O.T.S Projector') {
         dots.innerHTML = '<img id="dots-sym" src="img/x-square.svg"> D.O.T.S Projector';
+        dots.classList.remove('blank');
+        dots.classList.add('check');
     } else {
         if (dots.innerHTML === '<img id="dots-sym" src="img/x-square.svg"> D.O.T.S Projector') {
             dots.innerHTML = '<img id="dots-sym" src="img/square.svg"> <del>D.O.T.S Projector</del>';
+            dots.classList.remove('check');
+            dots.classList.add('cross');
         } else {
             if(dots.innerHTML === '<img id="dots-sym" src="img/square.svg"> <del>D.O.T.S Projector</del>') {
                 dots.innerHTML = '<img id="dots-sym" src="img/square.svg"> D.O.T.S Projector';
+                dots.classList.remove('cross');
+                dots.classList.add('blank');
             } 
         }
     } 
+    answerToggle(); 
 }
 
 function orbsToggle () {
     if (orbs.innerHTML === '<img id="orbs-sym" src="img/square.svg"> Ghost Orb') {
         orbs.innerHTML = '<img id="orbs-sym" src="img/x-square.svg"> Ghost Orb';
+        orbs.classList.remove('blank');
+        orbs.classList.add('check');
     } else {
         if (orbs.innerHTML === '<img id="orbs-sym" src="img/x-square.svg"> Ghost Orb') {
             orbs.innerHTML = '<img id="orbs-sym" src="img/square.svg"> <del>Ghost Orb</del>';
+            orbs.classList.remove('check');
+            orbs.classList.add('cross');
         } else {
             if(orbs.innerHTML === '<img id="orbs-sym" src="img/square.svg"> <del>Ghost Orb</del>') {
                 orbs.innerHTML = '<img id="orbs-sym" src="img/square.svg"> Ghost Orb';
+                orbs.classList.remove('cross');
+                orbs.classList.add('blank');
             } 
         }
     } 
+    answerToggle(); 
 }
 
 function spiritBoxToggle () {
     if (spiritBox.innerHTML === '<img id="spirit-box-sym" src="img/square.svg"> Spirit Box') {
         spiritBox.innerHTML = '<img id="spirit-box-sym" src="img/x-square.svg"> Spirit Box';
+        spiritBox.classList.remove('blank');
+        spiritBox.classList.add('check');
     } else {
         if (spiritBox.innerHTML === '<img id="spirit-box-sym" src="img/x-square.svg"> Spirit Box') {
             spiritBox.innerHTML = '<img id="spirit-box-sym" src="img/square.svg"> <del>Spirit Box</del>';
+            spiritBox.classList.remove('check');
+            spiritBox.classList.add('cross');
         } else {
             if(spiritBox.innerHTML === '<img id="spirit-box-sym" src="img/square.svg"> <del>Spirit Box</del>') {
                 spiritBox.innerHTML = '<img id="spirit-box-sym" src="img/square.svg"> Spirit Box';
+                spiritBox.classList.remove('cross');
+                spiritBox.classList.add('blank');
             } 
         }
     } 
+    answerToggle(); 
 }
 
 //Function for changing ghost answer buttons appearance on click
@@ -652,4 +701,175 @@ function thayeToggle () {
             thaye.innerHTML = 'Thaye';
         }
     }
+}
+
+function answerToggle () {
+    //spirit
+    if (emf.classList.contains('cross') || fingerprints.classList.contains('check') || writing.classList.contains('cross') || freezing.classList.contains('check') || dots.classList.contains('check') || orbs.classList.contains('check') || spiritBox.classList.contains('cross')) {
+        spirit.setAttribute('style', 'color:lightgrey');
+    } else {
+        spirit.setAttribute('style', 'color:black');
+    }
+
+    //wraith
+    if (emf.classList.contains('cross') || fingerprints.classList.contains('check') || writing.classList.contains('check') || freezing.classList.contains('check') || dots.classList.contains('cross') || orbs.classList.contains('check') || spiritBox.classList.contains('cross')) {
+        wraith.setAttribute('style', 'color:lightgrey');
+    } else {
+        wraith.setAttribute('style', 'color:black');
+    }
+    
+    //phantom
+    if (emf.classList.contains('check') || fingerprints.classList.contains('cross') || writing.classList.contains('check') || freezing.classList.contains('check') || dots.classList.contains('cross') || orbs.classList.contains('check') || spiritBox.classList.contains('cross')) {
+        phantom.setAttribute('style', 'color:lightgrey');
+    } else {
+        phantom.setAttribute('style', 'color:black');
+    }
+    
+    //poltergeist
+    if (emf.classList.contains('check') || fingerprints.classList.contains('cross') || writing.classList.contains('cross') || freezing.classList.contains('check') || dots.classList.contains('check') || orbs.classList.contains('check') || spiritBox.classList.contains('cross')) {
+        poltergeist.setAttribute('style', 'color:lightgrey');
+    } else {
+        poltergeist.setAttribute('style', 'color:black');
+    }
+
+    //banshee
+    if (emf.classList.contains('check') || fingerprints.classList.contains('cross') || writing.classList.contains('check') || freezing.classList.contains('check') || dots.classList.contains('cross') || orbs.classList.contains('cross') || spiritBox.classList.contains('check')) {
+        banshee.setAttribute('style', 'color:lightgrey');
+    } else {
+        banshee.setAttribute('style', 'color:black');
+    }
+
+    //jinn
+    if (emf.classList.contains('cross') || fingerprints.classList.contains('cross') || writing.classList.contains('check') || freezing.classList.contains('cross') || dots.classList.contains('check') || orbs.classList.contains('check') || spiritBox.classList.contains('check')) {
+        jinn.setAttribute('style', 'color:lightgrey');
+    } else {
+        jinn.setAttribute('style', 'color:black');
+    }
+
+    //mare
+    if (emf.classList.contains('check') || fingerprints.classList.contains('check') || writing.classList.contains('cross') || freezing.classList.contains('check') || dots.classList.contains('check') || orbs.classList.contains('cross') || spiritBox.classList.contains('cross')) {
+        mare.setAttribute('style', 'color:lightgrey');
+    } else {
+        mare.setAttribute('style', 'color:black');
+    }
+
+    //revenant
+    if (emf.classList.contains('check') || fingerprints.classList.contains('check') || writing.classList.contains('cross') || freezing.classList.contains('cross') || dots.classList.contains('check') || orbs.classList.contains('cross') || spiritBox.classList.contains('check')) {
+        revenant.setAttribute('style', 'color:lightgrey');
+    } else {
+        revenant.setAttribute('style', 'color:black');
+    }
+
+    //shade
+    if (emf.classList.contains('cross') || fingerprints.classList.contains('check') || writing.classList.contains('cross') || freezing.classList.contains('cross') || dots.classList.contains('check') || orbs.classList.contains('check') || spiritBox.classList.contains('check')) {
+        shade.setAttribute('style', 'color:lightgrey');
+    } else {
+        shade.setAttribute('style', 'color:black');
+    }
+
+    //demon
+    if (emf.classList.contains('check') || fingerprints.classList.contains('cross') || writing.classList.contains('cross') || freezing.classList.contains('cross') || dots.classList.contains('check') || orbs.classList.contains('check') || spiritBox.classList.contains('check')) {
+        demon.setAttribute('style', 'color:lightgrey');
+    } else {
+        demon.setAttribute('style', 'color:black');
+    }
+
+    //yurei
+    if (emf.classList.contains('check') || fingerprints.classList.contains('check') || writing.classList.contains('check') || freezing.classList.contains('cross') || dots.classList.contains('cross') || orbs.classList.contains('cross') || spiritBox.classList.contains('check')) {
+        yurei.setAttribute('style', 'color:lightgrey');
+    } else {
+        yurei.setAttribute('style', 'color:black');
+    }
+
+    //oni
+    if (emf.classList.contains('cross') || fingerprints.classList.contains('check') || writing.classList.contains('check') || freezing.classList.contains('cross') || dots.classList.contains('cross') || orbs.classList.contains('check') || spiritBox.classList.contains('check')) {
+        oni.setAttribute('style', 'color:lightgrey');
+    } else {
+        oni.setAttribute('style', 'color:black');
+    }
+
+    //yokai
+    if (emf.classList.contains('check') || fingerprints.classList.contains('check') || writing.classList.contains('check') || freezing.classList.contains('check') || dots.classList.contains('cross') || orbs.classList.contains('cross') || spiritBox.classList.contains('cross')) {
+        yokai.setAttribute('style', 'color:lightgrey');
+    } else {
+        yokai.setAttribute('style', 'color:black');
+    }
+
+    //hantu
+    if (emf.classList.contains('check') || fingerprints.classList.contains('cross') || writing.classList.contains('check') || freezing.classList.contains('cross') || dots.classList.contains('check') || orbs.classList.contains('cross') || spiritBox.classList.contains('check')) {
+        hantu.setAttribute('style', 'color:lightgrey');
+    } else {
+        hantu.setAttribute('style', 'color:black');
+    }
+
+    //goryo
+    if (emf.classList.contains('cross') || fingerprints.classList.contains('cross') || writing.classList.contains('check') || freezing.classList.contains('check') || dots.classList.contains('cross') || orbs.classList.contains('check') || spiritBox.classList.contains('check')) {
+        goryo.setAttribute('style', 'color:lightgrey');
+    } else {
+        goryo.setAttribute('style', 'color:black');
+    }
+
+    //myling
+    if (emf.classList.contains('cross') || fingerprints.classList.contains('cross') || writing.classList.contains('cross') || freezing.classList.contains('check') || dots.classList.contains('check') || orbs.classList.contains('check') || spiritBox.classList.contains('check')) {
+        myling.setAttribute('style', 'color:lightgrey');
+    } else {
+        myling.setAttribute('style', 'color:black');
+    }
+
+    //onryo
+    if (emf.classList.contains('check') || fingerprints.classList.contains('check') || writing.classList.contains('check') || freezing.classList.contains('cross') || dots.classList.contains('check') || orbs.classList.contains('cross') || spiritBox.classList.contains('cross')) {
+        onryo.setAttribute('style', 'color:lightgrey');
+    } else {
+        onryo.setAttribute('style', 'color:black');
+    }
+
+    //twins
+    if (emf.classList.contains('cross') || fingerprints.classList.contains('check') || writing.classList.contains('check') || freezing.classList.contains('cross') || dots.classList.contains('check') || orbs.classList.contains('check') || spiritBox.classList.contains('cross')) {
+        twins.setAttribute('style', 'color:lightgrey');
+    } else {
+        twins.setAttribute('style', 'color:black');
+    }
+
+    //raiju
+    if (emf.classList.contains('cross') || fingerprints.classList.contains('check') || writing.classList.contains('check') || freezing.classList.contains('check') || dots.classList.contains('cross') || orbs.classList.contains('cross') || spiritBox.classList.contains('check')) {
+        raiju.setAttribute('style', 'color:lightgrey');
+    } else {
+        raiju.setAttribute('style', 'color:black');
+    }
+
+    //obake
+    if (emf.classList.contains('cross') || fingerprints.classList.contains('cross') || writing.classList.contains('check') || freezing.classList.contains('check') || dots.classList.contains('check') || orbs.classList.contains('cross') || spiritBox.classList.contains('check')) {
+        obake.setAttribute('style', 'color:lightgrey');
+    } else {
+        obake.setAttribute('style', 'color:black');
+    }
+
+    //mimic
+    if (emf.classList.contains('check') || fingerprints.classList.contains('cross') || writing.classList.contains('check') || freezing.classList.contains('cross') || dots.classList.contains('check') || orbs.classList.contains('check') || spiritBox.classList.contains('cross')) {
+        mimic.setAttribute('style', 'color:lightgrey');
+    } else {
+        mimic.setAttribute('style', 'color:black');
+    }
+
+    //moroi
+    if (emf.classList.contains('check') || fingerprints.classList.contains('check') || writing.classList.contains('cross') || freezing.classList.contains('cross') || dots.classList.contains('check') || orbs.classList.contains('check') || spiritBox.classList.contains('cross')) {
+        moroi.setAttribute('style', 'color:lightgrey');
+    } else {
+        moroi.setAttribute('style', 'color:black');
+    }
+
+    //deogen
+    if (emf.classList.contains('check') || fingerprints.classList.contains('check') || writing.classList.contains('cross') || freezing.classList.contains('check') || dots.classList.contains('cross') || orbs.classList.contains('check') || spiritBox.classList.contains('cross')) {
+        deogen.setAttribute('style', 'color:lightgrey');
+    } else {
+        deogen.setAttribute('style', 'color:black');
+    }
+
+    //thaye
+    if (emf.classList.contains('check') || fingerprints.classList.contains('check') || writing.classList.contains('cross') || freezing.classList.contains('check') || dots.classList.contains('cross') || orbs.classList.contains('cross') || spiritBox.classList.contains('check')) {
+        thaye.setAttribute('style', 'color:lightgrey');
+    } else {
+        thaye.setAttribute('style', 'color:black');
+    }
+    
 }
